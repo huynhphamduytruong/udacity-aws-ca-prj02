@@ -9,7 +9,7 @@ provider "aws" {
 resource "aws_instance" "Udacity-T2" {
   ami           = "ami-05fa00d4c63e32376"
   instance_type = "t2.micro"
-  subnet_id     = "subnet-0f5742c5494627a2c"
+  subnet_id     = "subnet-03cca6bcf6237bad9"
   count         = 4
 
   tags = {
@@ -22,7 +22,7 @@ resource "aws_instance" "Udacity-T2" {
 resource "aws_instance" "Udacity-M4" {
   ami           = "ami-05fa00d4c63e32376"
   instance_type = "m4.large"
-  subnet_id     = "subnet-0f5742c5494627a2c"
+  subnet_id     = "subnet-03cca6bcf6237bad9"
   count         = 2
 
   tags = {
